@@ -17,7 +17,7 @@ const HotAccessories = ({ item, itemCover }) => {
             {/* -----------2nd */}
             <div>
                 {
-                    item.map((curElm, index) => {
+                     item.map((curElm, index) => {
                         return <HotItemCard key={index} name={curElm.name} price={curElm.price} image={curElm.image} index={index} />
                     })
                 }
@@ -40,7 +40,7 @@ const HotAccessories = ({ item, itemCover }) => {
 
                 ))} */}
 
-                <HotItemCard key={0} image="https://i01.appmifile.com/webfile/globalimg/in/cms/593181BE-7DB8-15F5-E907-506427B8C9F4.jpg" index={0} name={''} price={0}/>
+                <HotItemCard key={30} image="https://i01.appmifile.com/webfile/globalimg/in/cms/593181BE-7DB8-15F5-E907-506427B8C9F4.jpg" index={0} name={''} price={0}/>
 
             </div>
 

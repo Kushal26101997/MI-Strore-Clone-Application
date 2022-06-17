@@ -1,11 +1,11 @@
 import React from 'react'
-import '../style/Offer.css'
+import '../style/Offers.css'
 import Offer from './Offer'
 
 const Offers = ({offers}) => {
 
     return(
-        <div className="offerSection">
+        <div className="offersSection">
             {
                 offers.map((curElm, index)=>{
                     return <Offer key={index} index={index} src={curElm.image} link={curElm.url}/>
