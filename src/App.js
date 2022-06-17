@@ -31,15 +31,15 @@ function App() {
 
         <Routes>
 
-          <Route path="/music"element={<HotAccessories key={0} item={data.hotAccessories.music} itemCover={data.hotAccessoriesCover.music} />}/>
+          <Route path="/music" key={0} element={<HotAccessories item={data.hotAccessories.music} itemCover={data.hotAccessoriesCover.music} />}/>
+          
+          <Route path="/smartDevice" key={1} element={<HotAccessories item={data.hotAccessories.smartDevice} itemCover={data.hotAccessoriesCover.smartDevice} />} />
 
-          <Route path="/smartDevice" element={<HotAccessories key={1} item={data.hotAccessories.smartDevice} itemCover={data.hotAccessoriesCover.smartDevice} />} />
+          <Route path="/home" key={2} element={<HotAccessories item={data.hotAccessories.home} itemCover={data.hotAccessoriesCover.home} />} />
 
-          <Route path="/home" element={<HotAccessories key={2} item={data.hotAccessories.home} itemCover={data.hotAccessoriesCover.home} />} />
+          <Route path="/lifestyle" key={3} element={<HotAccessories item={data.hotAccessories.lifeStyle} itemCover={data.hotAccessoriesCover.lifeStyle} />} />
 
-          <Route path="/lifestyle" element={<HotAccessories key={3} item={data.hotAccessories.lifeStyle} itemCover={data.hotAccessoriesCover.lifeStyle} />} />
-
-          <Route path="/mobileAccessories" element={<HotAccessories key={4} item={data.hotAccessories.mobileAccessories} itemCover={data.hotAccessoriesCover.mobileAccessories} />} />
+          <Route path="/mobileAccessories" key={4} element={<HotAccessories item={data.hotAccessories.mobileAccessories} itemCover={data.hotAccessoriesCover.mobileAccessories} />} />
 
         </Routes>
 
