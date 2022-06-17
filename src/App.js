@@ -14,7 +14,7 @@ import Videos from "./components/Videos"
 import Banner from "./components/Banner"
 import Footer from "./components/Footer"
 import NavOptios from './components/NavOptios'
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Outlet } from 'react-router-dom';
 
 function App() {
   return (
@@ -28,8 +28,8 @@ function App() {
         <StarProduct starProduct={data.starProduct} />
         <Heading text="HOT ACCESSORIES" />
         <HotAccessoriesMenu />
-
-        <Routes>
+        <Outlet/>
+        {/* <Routes>
 
           <Route path="/music" key={0} element={<HotAccessories item={data.hotAccessories.music} itemCover={data.hotAccessoriesCover.music} />}/>
           
@@ -41,7 +41,8 @@ function App() {
 
           <Route path="/mobileAccessories" key={4} element={<HotAccessories item={data.hotAccessories.mobileAccessories} itemCover={data.hotAccessoriesCover.mobileAccessories} />} />
 
-        </Routes>
+        </Routes> */}
+
 
         <Heading text="PRODUCT REVIEWS" />
 
